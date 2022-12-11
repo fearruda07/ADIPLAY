@@ -28,23 +28,27 @@ let alternativas = document.querySelector('#alternativas')
 
 const q0 = {
     numQuestao   : 0,
-    imagem       : 'superstar.gif',  
+    imagem       : '0',  
     pergunta     : "Pergunta",
     alternativaA : "Alternativa A",
     alternativaB : "Alternativa B",
     alternativaC : "Alternativa C",
     alternativaD : "Alternativa D",
     correta      : "0",
+    
+
 }
 const q1 = {
     numQuestao   : 1,
     imagem       : 'superstar.gif',  
     pergunta     : "Em 1970 surge o icone superstar o primeiro tenis com cano baixo inicialmente feito pra as quadras de basquete se tornou viral atraves do jogador....",
     alternativaA : "Bill Russel",
-    alternativaB : "Stephen Curry ",
+    alternativaB : "Stephen Curry",
     alternativaC : "Abdul-Jabbar",
     alternativaD : "Jerry West",
     correta      : "Abdul-Jabbar",
+    
+    
 }
 const q2 = {
     numQuestao   : 2,
@@ -55,20 +59,22 @@ const q2 = {
     alternativaC : "O conectando,engajando e inspirando",
     alternativaD : "Mais divertida",
     correta      : "O conectando,engajando e inspirando",
+ 
 }
 const q3 = {
     numQuestao   : 3,
     imagem       : '748.jpg',  
-    pergunta     : "O programa especialista running e woman foi criado com intuito de...",
+    pergunta     : "O programa especialista running e women foi criado com intuito de...",
     alternativaA : "Transformar vidas",
     alternativaB : "Trazer colaboradores mais capacitados em lojas",
     alternativaC : "Diminuir o turnover",
     alternativaD : "Diminuir a conversão nas lojas",
     correta      : "Trazer colaboradores mais capacitados em lojas",
+    
 }
 const q4 = {
     numQuestao   : 4,
-    imagem       : '4d.gif',  
+    imagem       : '4dfwd.gif',  
     pergunta     : "O tenis 4dfwd tem uma tecnologia que gera retorno de energia te impulsionando para.. ",
     alternativaA : "Cima economizando passos",
     alternativaB : "Frente economizando passos",
@@ -78,13 +84,14 @@ const q4 = {
 }
 const q5 = {
     numQuestao   : 5,
-    imagem       : 'performace.gif',  
+    imagem       : 'logo adi.gif',  
     pergunta     : "Esse logo representa que segmento?",
     alternativaA : "Performance",
-    alternativaB : "Original",
+    alternativaB : "Originals",
     alternativaC : "Apparel",
-    alternativaD : "Performace e Originals",
+    alternativaD : "Performance e Originals",
     correta      : "Performance",
+    
 }
 const q6 = {
     numQuestao   : 6,
@@ -95,16 +102,18 @@ const q6 = {
     alternativaC : "1949 em Lyon (Rhône-Alpes)",
     alternativaD : "1949 em Herzogenarauch",
     correta      : "1949 em Herzogenarauch",
+    
 }
 const q7 = {
     numQuestao   : 7,
-    imagem       : 'pensan.gif',  
-    pergunta     : "Em 2022 abriu uma loja franquia com 708m em formato stadium na AV.paulista qual loja seria?",
+    imagem       : 'top-center.jpg',  
+    pergunta     : "Em 2022 abriu uma loja conceito com 700m em formato stadium na AV.paulista que loja foi essa?",
     alternativaA : "Top Center",
     alternativaB : "City center",
     alternativaC : "Nomura center",
     alternativaD : "Bourbon center",
     correta      : "Top Center",
+    
 }
 const q8 = {
     numQuestao   : 8,
@@ -115,6 +124,7 @@ const q8 = {
     alternativaC : "Aprender sobre a cultura da adidas somente",
     alternativaD : "Aumentar o turnover",
     correta      : "Ter maior produtividade e rentabilidade junto ao time de vendas",
+    
 }
 const q9 = {
     numQuestao   : 9,
@@ -125,16 +135,18 @@ const q9 = {
     alternativaC : "BCS- Brasilia, Iguatemi",
     alternativaD : "BCS- Rio Branco,Via Verde",
     correta      : "BCS- Rio Branco,Via Verde",
+  
 }
 const q10 = {
     numQuestao   : 10,
-    imagem       : 'susten.jpg',  
+    imagem       : 'jeans va.gif',  
     pergunta     : "Sabemos que o jeans utiliza muita água em sua confecção, quantos litros é utilizado para confecção de 2 peças de jeans?",
     alternativaA : "500 a 800 litros",
     alternativaB : "1000 litros",
     alternativaC : "6.800 a 8.000 litros",
     alternativaD : "5.000 litros",
     correta      : "6.800 a 8.000 litros",
+    
 }
 
 // CONSTANTE COM UM ARRAY DE OBJETOS COM TODAS AS QUESTOES
@@ -164,7 +176,7 @@ b.setAttribute('value', '1B')
 c.setAttribute('value', '1C')
 d.setAttribute('value', '1D')
 
-// PARA MONTAR AS PROXIMAS QUESTOES
+// MONTAR AS PROXIMAS QUESTOES
 function proximaQuestao(nQuestao) {
     numero.textContent = nQuestao
     numQuestao.textContent = questoes[nQuestao].numQuestao
@@ -281,7 +293,7 @@ function fimDoJogo() {
         // REINICIAR O JOGO
         articleQuestoes.style.display = 'block'
         proximaQuestao(1)
-        instrucoes.textContent = 'Leia a questão e clique na resposta correta'
+        instrucoes.textContent = 'IMPOSSIBLE IS NOTHING'
     }, 8000)
 
 }
